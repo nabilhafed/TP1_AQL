@@ -10,6 +10,7 @@ public class Exo1Test {
     private Palindrome   palindrome ;
     @BeforeEach
     public void setup(){
+
         palindrome = new Palindrome() ;
     }
     @Test
