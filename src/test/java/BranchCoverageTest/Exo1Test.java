@@ -1,4 +1,4 @@
-package LineCoverageTest;
+package BranchCoverageTest;
 
 import org.exemple.Palindrome;
 import org.exemple.PalindromeCorrection;
