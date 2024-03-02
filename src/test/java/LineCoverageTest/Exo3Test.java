@@ -2,6 +2,7 @@ package LineCoverageTest;
 
 
 import org.exemple.BinarySearch;
+import org.exemple.BinarySearchCorrection;
 import org.exemple.Palindrome;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -29,5 +30,13 @@ public class Exo3Test {
 
          Assertions.assertEquals(2,results);
      }
+    @Test
+    public void binarySearchCorrectionTestExiste(){
+        int[] tableauEntiers = {1, 2, 3, 4, 5, 6,7,8};
+        BinarySearchCorrection binarySearchCorrection = new BinarySearchCorrection() ;
+        int results = binarySearchCorrection.binarySearch(tableauEntiers,3) ;
+
+        Assertions.assertEquals(2,results);
+    }
 
 }
