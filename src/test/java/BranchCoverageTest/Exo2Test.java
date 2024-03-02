@@ -2,6 +2,7 @@ package BranchCoverageTest;
 
 
 import org.exemple.Anagram;
+import org.exemple.Palindrome;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,12 +15,17 @@ public class Exo2Test {
     }
     @Test
     public void isAnagramTestNULL(){
-        boolean results  = anagram.isAnagram(null,null) ;
-        Assertions.fail() ;
+        Assertions.assertThrows(NullPointerException.class, () -> anagram.isAnagram(null,null));
     }
     @Test
-
     public void isAnagramTestDfrLength(){
+        boolean results = anagram.isAnagram("abc","ab") ;
+        Assertions.assertFalse(results);
+    }
+    @Test
+    public void isAnagramTestAnagram(){
+        boolean results = anagram.isAnagram("abcd","bdca") ;
+        Assertions.assertTrue(results);
 
     }
 

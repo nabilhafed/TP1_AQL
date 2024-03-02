@@ -10,7 +10,6 @@ public class Exo2Test {
     @BeforeEach
     public void upset(){
         anagram = new Anagram()  ;
-
     }
 
 
