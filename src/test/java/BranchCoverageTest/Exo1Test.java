@@ -15,7 +15,7 @@ public class Exo1Test {
     }
     @Test
     public void isPalindromeTestNull(){
-        boolean results  = palindrome.isPalindrome(null) ;
+        Assertions.assertThrows(NullPointerException.class, () -> Palindrome.isPalindrome(null));
      }
 
     @Test
