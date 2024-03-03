@@ -4,5 +4,5 @@ for (int i = 0; i < s1.length(); i++) {
             count[s1.charAt(i) - 'a' ]++;
             count[s2.charAt(i) - 'a' ]--;
         }
-**dans l'exercice 03 le problem dans les deux instruction suivant  : low = mid + 1; high = mid - 1;  telque la corection de l'erreur est de maitre low = mid - 1 {la racherche dans le partie inferieur a element} high = mid - 1;{la recherche dans la partie sup de element }
+*
 
