@@ -4,5 +4,8 @@ for (int i = 0; i < s1.length(); i++) {
             count[s1.charAt(i) - 'a' ]++;
             count[s2.charAt(i) - 'a' ]--;
         }
-*
+***dans l'exercice 04 n'exist pas une erreur
+***dans l'exercice 05 le premier erreur est dans la boucle   for (int i = 0; i <= symbols.length; i++) {.....} ; la correction est  :for (int i = 0; i < symbols.length; i++) {.....}
+
+
 
