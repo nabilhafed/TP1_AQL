@@ -17,8 +17,9 @@ public class Exo05Test {
         Assertions.assertThrows(IllegalArgumentException.class, () -> romanNumeral.toRoman(5000));
     }
     @Test
-    public void RomanNumeral(){
-
+    public void RomanNumeralTest(){
+     String results  = romanNumeral.toRoman(1) ;
+     Assertions.assertEquals("I",results);
     }
 
 }

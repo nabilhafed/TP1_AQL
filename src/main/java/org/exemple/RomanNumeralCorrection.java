@@ -1,6 +1,6 @@
 package org.exemple;
 
-public class RomanNumeral {
+public class RomanNumeralCorrection {
     public static String toRoman(int n) {
         if (n < 1 || n > 3999) {
             throw new IllegalArgumentException("n must be between 1 and 3999");
