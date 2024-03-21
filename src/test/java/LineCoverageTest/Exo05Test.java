@@ -25,7 +25,7 @@ public class Exo05Test {
     @Test
     public void RomanNumeralcorrectionTest(){
         RomanNumeralCorrection romanNumeralCorrection = new RomanNumeralCorrection() ;
-        String results  = romanNumeralCorrection.toRoman(1) ;
-        Assertions.assertEquals("I",results);
+        String results  = romanNumeralCorrection.toRoman(3) ;
+        Assertions.assertEquals("III",results);
     }
 }
