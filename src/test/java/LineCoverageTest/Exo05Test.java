@@ -2,6 +2,7 @@ package LineCoverageTest;
 
 import org.exemple.QuadraticEquation;
 import org.exemple.RomanNumeral;
+import org.exemple.RomanNumeralCorrection;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -21,5 +22,10 @@ public class Exo05Test {
      String results  = romanNumeral.toRoman(1) ;
      Assertions.assertEquals("I",results);
     }
-
+    @Test
+    public void RomanNumeralcorrectionTest(){
+        RomanNumeralCorrection romanNumeralCorrection = new RomanNumeralCorrection() ;
+        String results  = romanNumeralCorrection.toRoman(1) ;
+        Assertions.assertEquals("I",results);
+    }
 }
